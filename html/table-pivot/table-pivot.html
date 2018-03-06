@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./table-pivot.css" media="all" />
+</head>
+<body>
+<!-- You need table-pivot class to trigger the pivot feature -->
+<table class="table-pivot" width="100%">
+    <thead>
+        <!-- header -->
+        <tr>
+            <td>Column Day</td>
+            <td>Column Count</td>
+            <td>Column Country</td>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- to generate the header for pivot table you need to add data-display attribute to each of the cells -->
+        
+        <!-- might be better to pull from thead.tr.td, someday I figure how to do that -->
+
+        <tr><td data-display="Row Day:">Monday</td>
+            <td data-display="Row Count:">10</td>
+            <td data-display="Row Country:">Canada</td></tr>
+        <tr><td data-display="Row Day:">Tuesday</td>
+            <td data-display="Row Count:">12</td>
+            <td data-display="Row Country:">China</td></tr>
+    </tbody>
+    <tfoot>
+        <!-- footer -->
+        <tr><td colspan="3">The Footer</td></tr>
+    </tfoot>
+</table>
+</body>
+</html>
